@@ -1,0 +1,107 @@
+body {
+    box-sizing: border-box;
+}
+
+span {
+    transition: .5s;
+    transform: rotate(-45deg)
+}
+
+img {
+    width: 2em;
+    height: 2em;
+    margin-left: 1em;
+    /transform: scale(2);
+    /transition: all 1s ease-out;
+    animation-name: rol;
+    animation-duration: 1s;
+    /animation-timing-function: ease-out;
+    animation-delay: 0;
+    /animation-direction: alternate;
+    animation-iteration-count: 1;
+    /animation-fill-mode: none;
+    /animation-play-state: running;
+}
+
+
+
+@keyframes rol {
+    0% {
+        transform: rotate(0deg);
+        margin-left: -10%;
+
+    }
+    100% {
+        transform: rotate(90deg);
+
+    }
+}
+
+
+h1 {
+    color: #00d66c;
+    text-align: center;
+    font-size: 2.375em;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section button {
+    grid-column: 1/ span;
+    color: #909090;
+    border-radius: 8px;
+    padding: 1.5em;
+    transition: transform 0.2s;
+    margin: 2em;
+    font-size: 1em;
+    border-style: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button.clicked {
+    background-color: #00d66c;
+    color: white;
+}
+
+button.clicked:nth-of-type(3n) {
+    background-color: #2800a0;
+}
+
+button.clicked:nth-of-type(4n) {
+    background-color: #eedac8;
+}
+
+button.clicked:nth-of-type(5n) {
+    background-color: #120145;
+}
+
+button.clicked:nth-of-type(2) {
+    background-color: #ca2b55;
+}
+
+#go {
+    background-color: #ff3268;
+    border-radius: 8px;
+    padding: 1.5em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: auto auto;
+    width: 50%;
+    font-size: 1em;
+    border-style: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 2px 0px 0px #ca2b55;
+}
+
+#go:hover {
+    background-color: #ff658e;
+    transition: .2s;
+}

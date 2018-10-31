@@ -1,0 +1,50 @@
+@font-face {
+    src: url("../font/Nexa%20Regular.ttf");
+    font-family: "Nexa Regular";
+
+}
+
+@font-face {
+    src: url("../font/Nexa%20Bold.ttf");
+    font-family: "Nexa Bold";
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: Nexa Regular;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: white;
+    padding: 0.2em;
+    position: sticky;
+    top: -1px;
+    z-index: 999;
+}
+
+body > header > nav {
+    /display: block;
+
+}
+
+body > header > nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0 1em;
+}
+
+body > header > nav > ul li:first-of-type {
+    margin-right: auto
+}
+
+body > header > nav > ul li:last-of-type {
+    margin-left: 2em;
+}
+
+body > header > nav > ul li a {
+    color: #00d66c;
+    text-decoration: none
+}

@@ -1,0 +1,251 @@
+/* standard */
+
+body {
+    background: url(../images/achtergrond2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Nexa Regular;
+}
+
+@font-face {
+    src: url("../font/Nexa%20Regular.ttf");
+    font-family: "Nexa Regular";
+
+}
+
+@font-face {
+    src: url("../font/Nexa%20Bold.ttf");
+    font-family: "Nexa Bold";
+}
+
+
+
+/* section */
+
+form {
+    padding: 0.313em;
+    width: 30em;
+    margin: 0.625em auto 0.625em auto;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    width: 28.6em;
+    margin: 2em auto 3em auto;
+}
+
+section h2 {
+    color: #66d00c;
+    text-align: center;
+    font-size: 2.375em;
+    font-weight: bold;
+    padding: 0.2em;
+    font-family: Nexa Bold;
+}
+
+section h3 {
+    color: #202020;
+    text-align: center;
+
+}
+
+section ul {
+    margin: 2em;
+    list-style: none;
+}
+
+
+section li::before {
+    content: ' ';
+    background-image: url(../images/vink.svg);
+    width: 3em;
+    height: 2em;
+    display: inline-block;
+    background-size: contain;
+    margin-bottom: -0.8em;
+
+}
+
+
+/* main */
+
+main {
+    border-radius: 10px 10px 10px 10px;
+    padding: 0.313em;
+}
+
+
+/* form */
+
+fieldset {
+    border-style: none;
+    transition: all .7s;
+    margin-top: 2em;
+}
+
+form {
+    background-color: rgba(255, 255, 255);
+    margin-top: -2em;
+    border-radius: 8px;
+    transition: all .9s;
+
+}
+
+form > input[type="search"] {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #91a3b7;
+    padding: 0em 0.5em 0em 0.5em;
+    box-sizing: border-box;
+    height: 2.33em;
+    width: 20.533em;
+    font-size: 1em;
+    margin-bottom: 1.875em;
+
+}
+
+#name,
+#surname,
+#username,
+#mail,
+#password {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #91a3b7;
+    padding: 0em 0.5em 0em 0.5em;
+    box-sizing: border-box;
+    height: 3.33em;
+    width: 27.25em;
+    font-size: 1em;
+    margin-bottom: 1.875em;
+    margin-left: 1em;
+}
+
+
+#ticket {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #91a3b7;
+    padding: 0em 0.5em 0em 0.5em;
+    box-sizing: border-box;
+    height: 3.33em;
+    width: 5em;
+    font-size: 1em;
+    margin-bottom: 1.875em;
+    margin-left: 1em;
+}
+
+
+form label {
+    display: block;
+    margin: 1em 0 1em 1em;
+
+}
+
+legend {
+    color: #2800a0;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 2em
+}
+
+form > p {
+    color: #202020;
+    text-align: center;
+}
+
+
+form > p > a {
+    color: #202020;
+    -moz-transition: color 0.7s ease-out;
+    -o-transition: color 0.7s ease-out;
+    transition: color 0.7s ease-out;
+    transition: color 0.7s ease-out;
+}
+
+form > p > a:hover {
+    color: #ff3268;
+    transition: .2s
+}
+
+
+#date {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #91a3b7;
+    padding: 0em 0.5em 0em 0.5em;
+    box-sizing: border-box;
+    height: 3.33em;
+    width: 27.25em;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+form > fieldset > p {
+    color: #909090;
+    margin: -2em 0 1em 1.5em;
+    font-size: 0.875em;
+}
+
+fieldset > button {
+    background-color: #ff3268;
+    color: white;
+    border-radius: 1.25em;
+    font-size: 1em;
+    margin: auto;
+    padding: 0.40em 1em 0.40em 1em;
+    margin-left: 10em;
+    border-style: none;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.5em;
+    -moz-box-shadow: 0px 2px 0px 1px #ca2b55;
+    -webkit-box-shadow: 0px 2px 0px 1px #ca2b55;
+    box-shadow: 0px 2px 0px 0px #ca2b55;
+}
+
+fieldset > button:hover {
+    background-color: #ff658e;
+    transition: 0.7s;
+}
+
+/* input*/
+
+input {
+
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #91a3b7;
+    padding: 0em 0.5em 0em 0.5em;
+    box-sizing: border-box;
+    height: 3.33em;
+    width: 27.25em;
+    font-size: 1em;
+    margin-bottom: 1.875em;
+    margin-left: 1em;
+}
+
+
+input:invalid {
+    transition: all 1s;
+    border-color: red;
+
+}
+
+form:valid {
+    background: lightgreen;
+}
+
+input:valid {
+    border-color: green;
+}
+
+form:invalid {
+    background: white;
+}
+
+input:focus {
+    transform: scale(1.01, 1.01);
+}

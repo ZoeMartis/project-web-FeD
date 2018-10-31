@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>99 verhalen website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<!-- header -->
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bundels.html">Bundels</a></li>
+                <li><a href="aanmelden.html">Aanmelden</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- zoek balk -->
+    <section id="afbeelding">
+        <form action="search">
+            <fieldset>
+                <legend>Kies een verhaal</legend>
+                <input type="search" placeholder="Zoek uw verhaal">
+                <a href="resultaten.html">Zoeken</a>
+            </fieldset>
+
+            <!--dropdown fieldset-->
+            <a href="filter.html">filter</a>
+
+            <!--checkbox fieldset-->
+            <fieldset id="breakpoint">
+                <legend>filter</legend>
+                <div>
+                    <div>
+                        <label class="label">Jouw favoriet
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+                        <label class="label">Populair
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+                        <label class="label">Bundels
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+                        <label class="label">Vrolijk
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+
+                        <label class="label">Boos
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+                        <label class="label">Mysterieus
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+                        <label class="label">Realistisch
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+                        <label class="label">Onrealistisch
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+
+                    </div>
+                </div>
+                <a href="resultaten.html">Filter</a>
+            </fieldset>
+        </form>
+
+    </section>
+
+
+    <!-- sorteer-->
+
+    <section id="sorteer">
+        <ul>
+            <li><a href="homeA.html">Alfabetisch</a></li>
+            <li><a href="index.html">Populariteit</a></li>
+            <li><a href="homeb.html">Leestijd</a></li>
+        </ul>
+    </section>
+
+    <!-- scroller -->
+
+    <section id="results">
+        <h2>Ontdek nieuwe verhalen</h2>
+        <p>Gebaseerd op uw interesses</p>
+        <div>
+            <article>
+                <h3>Onomatopee</h3>
+                <img src="images/onomatopee1.png" alt="Onomatopee">
+                <footer>
+                    <button>Lees</button>
+                    <button class="button"><span></span></button>
+                </footer>
+            </article>
+            <article>
+                <h3>Verliefd</h3>
+                <img src="images/verliefd1.png" alt="Verliefd">
+                <footer>
+                    <button>Lees</button>
+                    <button class="button"><span></span></button>
+                </footer>
+            </article>
+            <article>
+                <h3>Sportcommentaar</h3>
+                <img src="images/sportcommentaar1.png" alt="Sportcommentaar">
+                <footer>
+                    <button>Lees</button>
+                    <button class="button"><span></span></button>
+                </footer>
+            </article>
+            <article>
+                <h3>Stoned</h3>
+                <img src="images/stoned1.png" alt="Stoned">
+                <footer>
+                    <button>Lees</button>
+                    <button class="button"><span></span></button>
+                </footer>
+            </article>
+            <article>
+                <h3>Poepen</h3>
+                <img src="images/poepen1.png" alt="Poepen">
+                <footer>
+                    <button>Lees</button>
+                    <button class="button"><span></span></button>
+                </footer>
+            </article>
+            <article>
+                <h3>Alzheimer</h3>
+                <img src="images/alzheimer1.png" alt="Alzheimer">
+                <footer>
+                    <button>Lees</button>
+                    <button class="button"><span></span></button>
+                </footer>
+            </article>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="js/filter.js"></script>
+</body>
+
+</html>

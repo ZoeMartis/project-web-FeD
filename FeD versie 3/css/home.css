@@ -1,0 +1,821 @@
+/* standaard */
+
+@font-face {
+    src: url("../font/Nexa%20Regular.ttf");
+    font-family: "Nexa Regular";
+}
+
+@font-face {
+    src: url("../font/Nexa%20Bold.ttf");
+    font-family: "Nexa Bold";
+}
+
+/*searchbalk*/
+
+#afbeelding {
+    padding-top: 0.01em;
+    padding-bottom: 0.01em;
+    background: url(../images/achtergrond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+}
+
+#afbeelding > form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 0.313em;
+    width: 20em;
+    margin: 0.625em auto 0.625em auto;
+}
+
+@media (min-width:55em) {
+    #afbeelding {
+        display: flex;
+    }
+}
+
+fieldset {
+    border: none;
+}
+
+/* search */
+
+#afbeelding > form > fieldset:nth-child(1) > legend {
+    font-family: Nexa Bold;
+    color: #00d66c;
+    font-size: 2.375em;
+    /font-weight: bold;
+    padding: 0.5em;
+
+}
+
+#afbeelding input[type="search"] {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #91a3b7;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    box-sizing: border-box;
+    width: 18em;
+    font-size: 1em;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+
+#afbeelding > form > fieldset:nth-child(1) > a {
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    margin: 1em 0em 1em 5.5em;
+    padding: 0em 0.75em 0em 0.75em;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 5.673em;
+    align-self: center;
+    transition: background-color 0.7s ease-out;
+    display: block;
+    box-shadow: 0px 2px 0px 0px #ca2b55;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2em;
+    margin: 1 auto;
+}
+
+#afbeelding > form > fieldset:nth-child(1) > a:hover {
+    background-color: #ff658e;
+    transition: .2s;
+}
+
+/*filter*/
+
+/* button */
+
+#afbeelding > form > a {
+    /margin: 0 auto;
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    /margin: 1em 0em 1em 9.4em;
+    margin: 0 auto;
+    padding: 0em 0.75em 0em 0.75em;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 5.673em;
+    align-self: center;
+    transition: background-color 0.7s ease-out;
+    display: block;
+    box-shadow: 0px 2px 0px 0px #ca2b55;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 1 auto;
+}
+
+#afbeelding > form > a:hover {
+    background-color: #ff658e;
+    transition: 0.2s;
+}
+
+/* checkbox */
+
+#breakpoint {
+    border: none;
+    display: flex;
+    display: none;
+}
+
+/* label*/
+
+label {
+    display: block;
+    position: relative;
+    padding-left: 2.917em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* De standaard checkbox weghalen*/
+
+label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+
+}
+
+/* nieuwe checkbox creeeren vanuit span */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.083em;
+    width: 2.083em;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: black;
+    border-radius: 8px;
+}
+
+
+
+label:hover input ~ .checkmark {
+    border-color: #2800a0;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+label .checkmark:after {
+    left: 0.75em;
+    top: 0.417em;
+    width: 0.417em;
+    height: 0.833em;
+    border: solid #2800a0;
+    border-width: 0 0.25em 0.25em 0;
+    -webkit-transform: rotate(45deg);
+}
+
+
+#breakpoint > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#breakpoint div div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+#breakpoint > legend {
+    position: absolute;
+    left: -666em;
+}
+
+label {
+    display: block;
+    margin-bottom: 2em;
+}
+
+#breakpoint > a {
+    /margin: 0 auto;
+    background-color: #ff3268;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    margin: 0 auto;
+    /margin: 1em 0em 1em 8.5em;
+    padding: 0em 0.75em 0em 0.75em;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 5.673em;
+    align-self: center;
+    transition: background-color 0.7s ease-out;
+    display: block;
+    box-shadow: 0px 2px 0px 0px #ca2b55;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+
+}
+
+#breakpoint > button:hover {
+    background-color: #ff658e;
+    transition: 0.2s;
+}
+
+/* breakpoint */
+
+@media(min-width: 55em) {
+    #afbeelding > form > a {
+        display: none;
+    }
+
+    #breakpoint {
+        display: block;
+    }
+}
+
+/* lees verder */
+
+#afbeelding > article {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    /margin: 0.625em;
+    padding: 0em 0em 0.625em 0.625em;
+    width: 20em;
+    height: 20em;
+    font-size: 1em;
+    margin: auto;
+
+}
+
+#afbeelding article > h3 {
+    color: #2800a0;
+    font-size: 1.250em;
+    margin-top: 0;
+    margin-left: 1em;
+    padding-top: 0.5em;
+
+}
+
+#afbeelding article p {
+    color: #202020;
+}
+
+article {
+    /width: 25em;
+    /margin: auto;
+}
+
+#afbeelding article > a {
+    background-color: #2800a0;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    margin: 0 auto;
+    /margin: 0.8em 0em 0em 8.6em;
+    padding: 0em 0.75em 0em 0.75em;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 8em;
+    align-self: center;
+    transition: background-color 0.7s ease-out;
+    box-shadow: 0px 2px 0px 0px #120145;
+    text-align: center;
+    display: block;
+    color: white;
+    margin: 1 auto;
+}
+
+#afbeelding article > a:hover {
+    background-color: #5e40b8;
+    transition: 0.2s;
+}
+
+/* Sorteer */
+
+#sorteer {
+    background-color: white;
+    margin-top: 0.5em;
+
+}
+
+#sorteer > ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+    margin: -0.5em 0.01em 0em 0.01em;
+}
+
+#sorteer > ul > li {
+    list-style: none;
+    padding: 0.2em;
+    color: #00d66c;
+    background-color: white;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+
+
+#sorteer > ul > li:hover {
+    color: #2800a0;
+    transition: .5s;
+}
+
+#sorteer > ul > li a {
+    list-style: none;
+    /padding: 0.2em 3em;
+    color: #00d66c;
+    text-decoration: none;
+    background-color: white;
+    transition: color 0.5s ease-out;
+}
+
+
+#sorteer > ul > li a:hover {
+    color: #2800a0;
+    transition: .5s;
+}
+
+
+/* resultaten basics*/
+
+/* button add */
+
+span:before {
+    content: '+';
+    color: white;
+    font-size: 1em;
+}
+
+button.button:hover {}
+
+span.added:before {
+    background-image: url('../images/vinkje.svg');
+    background-repeat: no-repeat;
+    background-size: 2em 1em;
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    content: "";
+}
+
+#results > div > article > footer > button.button.active {
+    /transform: scale(2);
+    /transition: all .5s ease-out;
+    animation-name: stretch;
+    animation-duration: 0.7s;
+    /animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    /animation-fill-mode: none;
+    /animation-play-state: running;
+    background-color: #00d66c;
+    box-shadow: 0px 2px 0px 0px #1e9162;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+/*resultaten zoek scherm*/
+
+#results > div > article:nth-child(4) > footer > a {
+    background-color: #2800a0;
+    font-size: 1em;
+    color: white;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    margin: 1em 0em 1em 0.3em;
+    padding: 0em 0.75em 0em 0.75em;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 8em;
+    text-align: center;
+    transition: all 0.7s ease-out;
+    box-shadow: 0px 2px 0px 0px #120145;
+    text-decoration: none;
+}
+
+#results > div > article:nth-child(4) > footer > a:hover {
+    background-color: #5e40b8;
+    transition: 0.2s;
+}
+
+/* resultaten basics */
+
+#results h2 {
+    color: #2800a0;
+    margin-left: 1em;
+    padding-top: 1em;
+}
+
+#results p {
+    color: #909090;
+    margin-left: 1.5em;
+    margin-top: -0.5em;
+}
+
+#results {
+    background-color: #f3e5d8;
+    margin-top: -1.2em;
+    padding-bottom: 4em;
+}
+
+#results > div > article img {
+    width: 100%;
+    /margin-top: -1.1em;
+    margin: 0em 0.3em 0.3em;
+}
+
+#results > div > article h3 {
+    margin-top: 0.3em;
+    padding: 0.3em;
+    color: #020202;
+
+}
+
+#results > div > article > footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#results > div > article > footer > button {
+    background-color: #2800a0;
+    font-size: 1em;
+    color: white;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    margin: 1em 0em 1em 0.3em;
+    padding: 0em 0.75em 0em 0.75em;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 8em;
+    align-self: center;
+    transition: all 0.7s ease-out;
+    box-shadow: 0px 2px 0px 0px #120145;
+}
+
+#results > div > article > footer > button:hover {
+    background-color: #5e40b8;
+    transition: 0.2s;
+}
+
+
+#results > div > article {
+    grid-column: 1/ span;
+    margin: 1em;
+    /margin: 0em 0.3em 0.3em;
+    border-style: none;
+    border-radius: 0.5em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /width: 15em;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1em;
+}
+
+#results > div {
+    /display: grid;
+    /grid-template-columns: 1fr;
+    /display: flex;
+    /justify-content: space-around;
+}
+
+#results > div > article img {
+    width: 100%;
+    /margin-top: -1.1em;
+    margin: auto;
+
+}
+
+#results > div > article h3 {
+    margin-top: 0.3em;
+    padding: 0.3em;
+    color: #020202;
+}
+
+/*major breakpoint 1*/
+
+@media (min-width:35em) {
+    #results > div > article {
+        grid-column: 1/ span;
+        margin: 1em;
+        /margin: 0em 0.3em 0.3em;
+        border-style: none;
+        border-radius: 0.5em;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: auto;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 1em;
+
+    }
+}
+
+
+@media (min-width:35em) {
+    #results > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /display: flex;
+        /justify-content: space-around;
+    }
+}
+
+
+/* major breakpoint 2*/
+
+@media (min-width:50em) {
+    #results > div > article {
+        grid-column: 1/ span;
+        margin: 1em;
+        /margin: 0em 0.3em 0.3em;
+        border-style: none;
+        border-radius: 0.5em;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: auto;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 1em;
+
+    }
+}
+
+@media (min-width:50em) {
+    #results > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /display: flex;
+        /justify-content: space-around;
+    }
+}
+
+
+/* Vakantie */
+
+#results > section {
+    display: flex;
+}
+
+#results > section > p {
+    margin: 1em;
+}
+
+#results > section p:nth-child(2):hover {
+    color: #ff3268;
+    cursor: pointer;
+}
+
+#results > section > p:nth-child(3):hover {
+    color: #ff3268;
+    cursor: pointer;
+}
+
+
+#results > section p:first-child {
+    margin-right: auto;
+}
+
+#results > div:nth-child(5) > article:nth-child(4) > footer > a {
+    background-color: #2800a0;
+    font-size: 1em;
+    color: white;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    margin: 1em 0em 1em 0.3em;
+    padding: 0em 0.75em 0em 0.75em;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 8em;
+    text-align: center;
+    transition: all 0.7s ease-out;
+    box-shadow: 0px 2px 0px 0px #120145;
+    text-decoration: none;
+}
+
+#results > div:nth-child(5) > article:nth-child(4) > footer > a:hover {
+    background-color: #5e40b8;
+    transition: 0.2s;
+}
+
+/* buttons na filter resultaten */
+
+body > #opties {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f3e5d8;
+    padding: 1em;
+}
+
+body > #opties buttons {
+    margin: 0.2em;
+}
+
+
+body > #opties > buttons:nth-child(1) {
+    background-color: #00d66c;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    /margin: 0.8em 0em 0em 8.6em;
+    /padding: 0em 0.75em 0em 0.75em;
+    /font-weight: 700;
+    /line-height: 1.5em;
+    width: 8em;
+    align-self: center;
+    transition: background-color 0.7s ease-out;
+    box-shadow: 0px 2px 0px 0px #1e9162;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+body > #opties > buttons:nth-child(1):hover {
+    background-color: #4de298;
+    transition: 0.2s;
+}
+
+
+body > #opties > buttons:nth-child(2) {
+    background-color: #2800a0;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    /margin: 0.8em 0em 0em 8.6em;
+    /padding: 0em 0.75em 0em 0.75em;
+    /font-weight: 700;
+    /line-height: 1.5em;
+    width: 8em;
+    align-self: center;
+    transition: background-color 0.7s ease-out;
+    box-shadow: 0px 2px 0px 0px #120145;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+body > #opties > buttons:nth-child(2):hover {
+    background-color: #5e40b8;
+    transition: 0.2s;
+}
+
+
+body > #opties > buttons:nth-child(3) {
+    background-color: #ff3268;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    /margin: 0.8em 0em 0em 8.6em;
+    /padding: 0em 0.75em 0em 0.75em;
+    /font-weight: 700;
+    /line-height: 1.5em;
+    width: 8em;
+    align-self: center;
+    transition: background-color 0.7s ease-out;
+    box-shadow: 0px 2px 0px 0px #ca2b55;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+body > #opties > buttons:nth-child(3):hover {
+    background-color: #ff658e;
+    transition: 0.2s;
+}
+
+
+
+/* favorieten aka empty state */
+
+#results > .empty {
+    color: #202020;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+#results > a {
+    background-color: #ff3268;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 1.25em;
+    border-style: none;
+    font-size: 1em;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 0em 0.75em 0em 0.75em;
+    font-weight: 700;
+    line-height: 1.5em;
+    width: 8em;
+    align-self: center;
+    transition: background-color 0.7s ease-out;
+    box-shadow: 0px 2px 0px 0px #120145;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+
+#results > a:hover {
+    background-color: #ff658e;
+    transition: 0.2s;
+}
+
+/* iphone */
+
+#iphone > img:nth-child(1) {
+    width: 100%
+}
+
+
+#iphone > img:nth-child(2) {
+    display: none;
+    width: 100%
+}
+
+
+#iphone > img:nth-child(3) {
+    display: none;
+    width: 100%
+}
+
+#iphone > img:nth-child(3) {
+    display: none;
+    width: 100%
+}
+
+@media (min-width:35em) {
+    #iphone > img:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (min-width:35em) {
+    #iphone > img:nth-child(2) {
+        display: block;
+    }
+}
+
+@media (min-width:50em) {
+    #iphone > img:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (min-width:50em) {
+    #iphone > img:nth-child(3) {
+        display: block;
+    }
+}
